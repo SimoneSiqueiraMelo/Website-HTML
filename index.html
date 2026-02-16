@@ -26,7 +26,7 @@
     </header>
 
     <main>
-        <p>Bem-vindo(a) ao <strong>Guia Básico de HTML</strong></p>
+        <h2>Bem-vindo(a) ao <strong>Guia Básico de HTML</strong></h2>
         <p>
             Se você já abriu o “Inspecionar elemento” do navegador e ficou se perguntando o que significam aquelas tags, você está no lugar certo.<br>
             O HTML é o primeiro passo no desenvolvimento web e funciona como o esqueleto de qualquer site.<br>
@@ -34,11 +34,171 @@
         </p>
 
         <section>
-            <h2>O que é HTML?</h2>
+            <h3>O que é HTML?</h3>
             <p>HTML significa HyperText Markup Language (Linguagem de Marcação de Hipertexto).<br>
                 Apesar de muita gente achar que é uma linguagem de programação, o HTML na verdade é uma linguagem de marcação, usada para estruturar o conteúdo de uma página web.<br><br>
                 Com o HTML, o navegador entende o que é:
             </p>
+            <ul>
+                <li>título</li>
+                <li>parágrafo</li>
+                <li>imagem</li>
+                <li>link</li>
+                <li>lista</li>
+                <li>formulário</li>
+            </ul>
+            <p>Sem HTML, não existe site 😉</p>
+        </section>
+
+        <section>
+            <h3>Estrutura Básica do HTML</h3>
+            <p>Todo documento HTML segue uma estrutura padrão. Ela é essencial para que o navegador interprete corretamente a página.</p>
+            <p>Exemplo de estrutura básica:</p>
+            <div>
+                <pre>
+                    <code>
+                        &lt;!&gt;DOCTYPE html&gt;
+                           &lt;html lang="pt-BR"&gt;
+                               &lt;head&gt;
+                                   &lt;meta charset="UTF-8"&gt;
+                                   &lt;title>Meu primeiro site&lt;/title&gt;
+                               &lt;/head&gt;
+                               &lt;body&gt;
+                                   &lt;h1>Hello, HTML!&lt;/h1&gt;
+                                   &lt;p>Esse é o conteúdo da página.&lt;/p&gt;
+                               &lt;/body&gt;
+                           &lt;/html&gt;
+                    </code>
+                </pre>
+            </div>
+            <ul>
+                <li>
+                    <h4>DOCTYPE html</h4>
+                    <p>Define que o documento está usando HTML5.</p>
+                </li>
+                <li>
+                    <h4>html</h4>
+                    <p>É a raiz do documento, envolve toda a página.</p>
+                </li>
+                <li>
+                    <h4>lang="pt-BR"</h4>
+                    <p>Define o idioma da página.</p>
+                </li>
+                <li>
+                    <h4>head</h4>
+                    <p>Contém informações internas da página (não visíveis).</p>
+                </li>
+                <li>
+                    <h4>meta charset="UTF-8"</h4>
+                    <p>Permite exibir acentos e caracteres especiais corretamente.</p>
+                </li>
+                <li>
+                    <h4>title</h4>
+                    <p>Define o título que aparece na aba do navegador.</p>
+                </li>
+                <li>
+                    <h4>body</h4>
+                    <p>Contém todo o conteúdo visível do site.</p>
+                </li>
+                <li>
+                    <h4>h1</h4>
+                    <p>Título principal da página.</p>
+                </li>
+                <li>
+                    <h4>p</h4>
+                    <p>Parágrafo de texto.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>PRINCIPAIS TAGS HTML</h3>
+            <p>As tags HTML são responsáveis por estruturar e organizar o conteúdo da página. Cada uma possui uma função específica dentro do documento.</p>
+            <pre>
+                <code>
+                    &lt;h1&gt;Título principal&lt;/h1&gt;
+                    &lt;h2&gt;Subtítulo&lt;/h2&gt;
+                    &lt;p&gt;Isso é um parágrafo.&lt;/p&gt;
+
+                    &lt;strong&gt;Texto em destaque&lt;/strong&gt;
+                    &lt;em&gt;Texto enfatizado&lt;/em&gt;
+                </code>
+            </pre>
+            <ul>
+                <li>
+                    <h4>h1 até h6</h4>
+                    <p>Definem títulos e subtítulos, organizando a hierarquia do conteúdo.</p>
+                </li>
+                <li>
+                    <h4>p</h4>
+                    <p>Cria parágrafos de texto.</p>
+                </li>
+                <li>
+                    <h4>strong</h4>
+                    <p>Indica importância (geralmente exibido em negrito).</p>
+                </li>
+                <li>
+                    <h4>em</h4>
+                    <p>Indica ênfase (geralmente exibido em itálico).</p>
+                </li>
+            </ul>
+            <p>Essas tags ajudam o navegador e também mecanismos de busca a entenderem a estrutura do site.</p>
+        </section>
+
+        <section>
+            <h3>LINKS E NAVEGAÇÃO</h3>
+            <p>Links permitem conectar páginas e criar navegação entre conteúdos.</p>
+            <pre>
+                <code>
+                    &lt;a "https://www.dio.me" target="_blank"&gt;
+                        Visitara DIO
+                    &lt;/a&gt;
+
+                    &lt;a href="#formularios" &gt;
+                        Ir para Formulários
+                    &lt;/a&gt;
+                </code>
+            </pre>
+            <ul>
+                <li>
+                    <h4>a</h4>
+                    <p>cria links.</p>
+                </li>
+                <li>
+                    <h4>href</h4>
+                    <p>define o destino do link.</p>
+                </li>
+                <li>
+                    <h4>target="_blank"</h4>
+                    <p>abre o link em nova aba.</p>
+                </li>
+            </ul>
+            <p>Também é possível criar navegação interna usando âncoras com <strong>id</strong>.</p>
+        </section>
+
+        <section>
+            <h3>IMAGENS NO HTML</h3>
+            <p>Imagens deixam o site mais visual e informativo.</p>
+            <pre>
+                <code>
+                    &lt;src="imagem.jpg" alt="Descrição da imagem"&gt;
+                </code>
+            </pre>
+            <ul>
+                <li>
+                    <h4>img</h4>
+                    <p>insere uma imagem.</p>
+                </li>
+                <li>
+                    <h4>src</h4>
+                    <p>caminho da imagem.</p>
+                </li>
+                <li>
+                    <h4>alt</h4>
+                    <p>descrição alternativa (importante para acessibilidade).</p>
+                </li>
+            </ul>
+            <p>A tag <strong>img</strong> não possui fechamento.</p>
         </section>
     </main>
 </body>
